@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Docente
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/registro']" expand="block" color="primary">Registrar</ion-button>
+        <span class="divider line one-line"></span>
+        <span class="already"> ya tiene usuario?</span>
+        <ion-button [routerLink]="['/login']" expand="block" color="danger">Iniciar sesión</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
