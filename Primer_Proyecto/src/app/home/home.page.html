@@ -1,19 +1,27 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>    
     <ion-title>
-      Docente
+      <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png"></ion-img>
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content class="auth-form">
-  <ion-grid>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+    <ion-button type="submit" color="danger" expand="block">siguiente</ion-button>
     <ion-row>
-      <ion-col align-self-center>
-        <ion-button [routerLink]="['/registro']" expand="block" color="primary">Registrar</ion-button>
-        <span class="divider line one-line"></span>
-        <span class="already"> ya tiene usuario?</span>
-        <ion-button [routerLink]="['/login']" expand="block" color="danger">Iniciar sesión</ion-button>
-      </ion-col>
+        <a [routerLink]="['/forgot-password']" class="small-text"> Recuperar contraseña</a>
     </ion-row>
-  </ion-grid>
+  </form>
 </ion-content>
